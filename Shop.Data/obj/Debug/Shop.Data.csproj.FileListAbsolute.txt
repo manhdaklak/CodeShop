@@ -1,0 +1,14 @@
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\bin\Debug\Shop.Data.dll.config
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\bin\Debug\Shop.Data.dll
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\bin\Debug\Shop.Data.pdb
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\bin\Debug\EntityFramework.dll
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\bin\Debug\EntityFramework.xml
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\obj\Debug\Shop.Data.csprojAssemblyReference.cache
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\obj\Debug\Shop.Data.csproj.CoreCompileInputs.cache
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\obj\Debug\Shop.Data.csproj.CopyComplete
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\obj\Debug\Shop.Data.dll
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\obj\Debug\Shop.Data.pdb
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\bin\Debug\Shop.Common.dll
+D:\2020-2021\ASPNET\SourceCodeShop\Shop.Web\Shop.Data\bin\Debug\Shop.Common.pdb
