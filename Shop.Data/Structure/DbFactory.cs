@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Shop.Data.Structure
 {
+    /// <summary>
+    /// Khởi tạo DB
+    /// </summary>
     public class DbFactory : Disposable, IDbFactory
     {
         ShopDbContext db ;

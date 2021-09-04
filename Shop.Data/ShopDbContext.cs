@@ -186,5 +186,5 @@ namespace Shop.Data
                 .IsUnicode(false);
         }
     }
-}
+
 }

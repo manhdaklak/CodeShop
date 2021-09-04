@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shop.Data.Structure
 {
+    
     public interface IDbFactory
     {
         ShopDbContext Init();
