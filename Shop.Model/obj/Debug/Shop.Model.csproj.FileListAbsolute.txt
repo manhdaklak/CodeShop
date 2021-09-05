@@ -21,3 +21,8 @@ D:\2020-2021\ASPNET\CodeShop\Shop.Model\obj\Debug\Shop.Model.csproj.CoreCompileI
 D:\2020-2021\ASPNET\CodeShop\Shop.Model\obj\Debug\Shop.Model.csproj.CopyComplete
 D:\2020-2021\ASPNET\CodeShop\Shop.Model\obj\Debug\Shop.Model.dll
 D:\2020-2021\ASPNET\CodeShop\Shop.Model\obj\Debug\Shop.Model.pdb
+D:\2020-2021\ASPNET\CodeShop\Shop.Model\obj\Debug\Shop.Model.csprojAssemblyReference.cache
+D:\2020-2021\ASPNET\CodeShop\Shop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml

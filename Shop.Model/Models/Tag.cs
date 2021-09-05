@@ -1,18 +1,22 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Shop.Model.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
-
-    [Table("Tag")]
-    public partial class Tag
+    [Table("Tags")]
+    public class Tag
     {
-        [StringLength(50)]
-        public string ID { get; set; }
+        [Key]
+        [MaxLength(50)]
+        [Column(TypeName = "varchar")]
+        public string ID { set; get; }
 
-        [StringLength(50)]
-        public string Name { get; set; }
+        [MaxLength(50)]
+        [Required]
+        public string Name { set; get; }
+
+        [MaxLength(50)]
+        [Required]
+        public string Type { set; get; }
     }
 }

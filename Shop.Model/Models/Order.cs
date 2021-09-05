@@ -1,41 +1,52 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Shop.Model.Models
 {
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
-
-    [Table("Order")]
-    public partial class Order
+    [Table("Orders")]
+    public class Order
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Order()
-        {
-            OrderDetails = new HashSet<OrderDetail>();
-        }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ID { set; get; }
 
-        public long ID { get; set; }
+        [Required]
+        [MaxLength(256)]
+        public string CustomerName { set; get; }
 
-        public DateTime? CreatedDate { get; set; }
+        [Required]
+        [MaxLength(256)]
+        public string CustomerAddress { set; get; }
 
-        public long? CustomerID { get; set; }
+        [Required]
+        [MaxLength(256)]
+        public string CustomerEmail { set; get; }
 
-        [StringLength(50)]
-        public string ShipName { get; set; }
+        [Required]
+        [MaxLength(50)]
+        public string CustomerMobile { set; get; }
 
-        [StringLength(50)]
-        public string ShipMobile { get; set; }
+        [Required]
+        [MaxLength(256)]
+        public string CustomerMessage { set; get; }
 
-        [StringLength(50)]
-        public string ShipAddress { get; set; }
+        [MaxLength(256)]
+        public string PaymentMethod { set; get; }
 
-        [StringLength(50)]
-        public string ShipEmail { get; set; }
+        public DateTime? CreatedDate { set; get; }
+        public string CreatedBy { set; get; }
+        public string PaymentStatus { set; get; }
+        public bool Status { set; get; }
 
-        public int? Status { get; set; }
+        [StringLength(128)]
+        [Column(TypeName = "nvarchar")]
+        public string CustomerId { set; get; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+        [ForeignKey("CustomerId")]
+        public virtual ApplicationUser User { set; get; }
+
+        public virtual IEnumerable<OrderDetail> OrderDetails { set; get; }
     }
 }

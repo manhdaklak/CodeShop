@@ -29,3 +29,9 @@ D:\2020-2021\ASPNET\CodeShop\Shop.Data\bin\Debug\Shop.Model.dll.config
 D:\2020-2021\ASPNET\CodeShop\Shop.Data\bin\Debug\EntityFramework.xml
 D:\2020-2021\ASPNET\CodeShop\Shop.Data\bin\Debug\EntityFramework.SqlServer.xml
 D:\2020-2021\ASPNET\CodeShop\Shop.Data\obj\Debug\Shop.Data.csproj.CopyComplete
+D:\2020-2021\ASPNET\CodeShop\Shop.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.Data\obj\Debug\Shop.Data.Migrations.InitDB.resources
+D:\2020-2021\ASPNET\CodeShop\Shop.Data\obj\Debug\Shop.Data.csproj.GenerateResource.cache

@@ -28,3 +28,9 @@ D:\2020-2021\ASPNET\CodeShop\Shop.Service\obj\Debug\Shop.Service.csproj.CoreComp
 D:\2020-2021\ASPNET\CodeShop\Shop.Service\obj\Debug\Shop.Service.csproj.CopyComplete
 D:\2020-2021\ASPNET\CodeShop\Shop.Service\obj\Debug\Shop.Service.dll
 D:\2020-2021\ASPNET\CodeShop\Shop.Service\obj\Debug\Shop.Service.pdb
+D:\2020-2021\ASPNET\CodeShop\Shop.Service\bin\Debug\EntityFramework.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Service\bin\Debug\EntityFramework.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Service\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.Service\bin\Debug\Microsoft.AspNet.Identity.Core.xml

@@ -150,3 +150,7 @@ D:\2020-2021\ASPNET\CodeShop\Shop.Web\obj\Debug\Shop.Web.csproj.CoreCompileInput
 D:\2020-2021\ASPNET\CodeShop\Shop.Web\obj\Debug\Shop.Web.csproj.CopyComplete
 D:\2020-2021\ASPNET\CodeShop\Shop.Web\obj\Debug\Shop.Web.dll
 D:\2020-2021\ASPNET\CodeShop\Shop.Web\obj\Debug\Shop.Web.pdb
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.AspNet.Identity.Core.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.AspNet.Identity.Core.xml

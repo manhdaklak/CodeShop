@@ -1,63 +1,61 @@
+﻿using Shop.Model.Abstract;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Xml.Linq;
+
+
 namespace Shop.Model.Models
 {
-    using Shop.Model.Abstract;
-    using System;
-    using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
-
-    [Table("Product")]
-    public  class Product : Auditable
+    [Table("Products")]
+    
+    public class Product : Auditable
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Product()
-        {
-            OrderDetails = new HashSet<OrderDetail>();
-        }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int ID { set; get; }
 
-        public long ID { get; set; }
+        [Required]
+        [MaxLength(256)]
+        public string Name { set; get; }
 
-        [StringLength(250)]
-        public string Name { get; set; }
+        [Required]
+        [MaxLength(256)]
+        public string Alias { set; get; }
 
-        [StringLength(10)]
-        public string Code { get; set; }
+        [Required]
+        public int CategoryID { set; get; }
 
-        [StringLength(250)]
-        public string MetaTitle { get; set; }
-
-        [StringLength(500)]
-        public string Description { get; set; }
-
-        [StringLength(250)]
-        public string Image { get; set; }
+        [MaxLength(256)]
+        public string Image { set; get; }
 
         [Column(TypeName = "xml")]
-        public string MoreImages { get; set; }
+        public string MoreImages { set; get; }
 
-        public decimal? Price { get; set; }
+        public decimal Price { set; get; }
 
-        public decimal? PromotionPrice { get; set; }
+        public decimal? PromotionPrice { set; get; }
 
-        public bool? IncludedVAT { get; set; }
+        public int? Warranty { set; get; }
 
-        public int Quantity { get; set; }
+        [MaxLength(500)]
+        public string Description { set; get; }
+        public string Content { set; get; }
 
-        public long? CategoryID { get; set; }
+        public bool? HomeFlag { set; get; }
+        public bool? HotFlag { set; get; }
+        public int? ViewCount { set; get; }
 
-        [Column(TypeName = "ntext")]
-        public string Detail { get; set; }
+        public string Tags { set; get; }
 
-        public int? Warranty { get; set; }
+        public int Quantity { set; get; }
 
-        public DateTime? TopHot { get; set; }
+        public decimal OriginalPrice { set; get; }
 
-        public int? ViewCount { get; set; }
+        [ForeignKey("CategoryID")]
+        public virtual ProductCategory ProductCategory { set; get; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
-
-        public virtual ProductCategory ProductCategory { get; set; }
+        public virtual IEnumerable<ProductTag> ProductTags { set; get; }
     }
 }

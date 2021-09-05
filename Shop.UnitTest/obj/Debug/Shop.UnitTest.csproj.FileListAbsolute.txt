@@ -93,3 +93,9 @@ D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\obj\Debug\Shop.UnitTest.csproj.CoreCo
 D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\obj\Debug\Shop.UnitTest.csproj.CopyComplete
 D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\obj\Debug\Shop.UnitTest.dll
 D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\obj\Debug\Shop.UnitTest.pdb
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\EntityFramework.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\EntityFramework.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.xml

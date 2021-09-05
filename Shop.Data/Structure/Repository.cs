@@ -12,7 +12,7 @@ namespace Shop.Data.Structure
     /// Thực thi các phương thức 
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public abstract class Repository<T>  where T : class
+    public abstract class Repository<T> :IRepository<T> where T : class
     {
         private ShopDbContext dbContext;
         private readonly IDbSet<T> dbSet;
@@ -79,20 +79,6 @@ namespace Shop.Data.Structure
             return dbSet.Count(where);
         }
 
-        public IEnumerable<T> GetAll(string[] includes = null)
-        {
-            //HANDLE INCLUDES FOR ASSOCIATED OBJECTS IF APPLICABLE
-            if (includes != null && includes.Count() > 0)
-            {
-                var query = dbContext.Set<T>().Include(includes.First());
-                foreach (var include in includes.Skip(1))
-                    query = query.Include(include);
-                return query.AsQueryable();
-            }
-
-            return dbContext.Set<T>().AsQueryable();
-        }
-
         public T GetSingleByCondition(Expression<Func<T, bool>> expression, string[] includes = null)
         {
             if (includes != null && includes.Count() > 0)
@@ -145,6 +131,20 @@ namespace Shop.Data.Structure
         public bool CheckContains(Expression<Func<T, bool>> predicate)
         {
             return dbContext.Set<T>().Count<T>(predicate) > 0;
+        }
+
+        IQueryable<T> IRepository<T>.GetAll(string[] includes)
+        {
+            //HANDLE INCLUDES FOR ASSOCIATED OBJECTS IF APPLICABLE
+            if (includes != null && includes.Count() > 0)
+            {
+                var query = dbContext.Set<T>().Include(includes.First());
+                foreach (var include in includes.Skip(1))
+                    query = query.Include(include);
+                return query.AsQueryable();
+            }
+
+            return dbContext.Set<T>().AsQueryable();
         }
         #endregion
     }
