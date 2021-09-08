@@ -154,3 +154,4 @@ D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.AspNet.Identity.EntityFramew
 D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.AspNet.Identity.Core.dll
 D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.AspNet.Identity.Core.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Shop.Service.dll.config

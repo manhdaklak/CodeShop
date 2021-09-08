@@ -41,7 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonConstants.cs" />
+    <Compile Include="NameDuplicatedException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Shop.Common.dll" />
+    <Content Include="bin\Debug\Shop.Common.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -18,7 +18,7 @@ namespace Shop.Data.Structure
 
         // xóa bản ghi
          T Delete(T entity);
-
+        T DeleteByID(int id);
         void DeleteMulti(Expression<Func<T, bool>> where);
 
         //Tìm theo id

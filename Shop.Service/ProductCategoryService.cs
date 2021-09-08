@@ -76,7 +76,7 @@ namespace Shop.Service
 
         public void Update(ProductCategory productCategory)
         {
-            throw new NotImplementedException();
+            _productCategoryRepository.Update(productCategory);
         }
     }
 }

@@ -8,6 +8,7 @@ namespace Shop.Common
 {
     public class NameDuplicatedException: Exception
     {
+
         public NameDuplicatedException()
         {
         }

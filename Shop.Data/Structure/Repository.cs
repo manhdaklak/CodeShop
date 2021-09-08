@@ -146,6 +146,12 @@ namespace Shop.Data.Structure
 
             return dbContext.Set<T>().AsQueryable();
         }
+
+        public T DeleteByID(int id)
+        {
+            var entity = dbSet.Find(id);
+            return dbSet.Remove(entity);
+        }
         #endregion
     }
 }

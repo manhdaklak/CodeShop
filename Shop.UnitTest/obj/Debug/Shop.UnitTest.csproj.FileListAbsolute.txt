@@ -99,3 +99,12 @@ D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\Microsoft.AspNet.Identity.E
 D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\Castle.Core.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\Moq.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\Shop.Service.dll.config
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\Castle.Core.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\Moq.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.UnitTest\bin\Debug\System.Threading.Tasks.Extensions.xml
