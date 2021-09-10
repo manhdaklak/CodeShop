@@ -25,3 +25,4 @@ D:\2020-2021\ASPNET\CodeShop\Shop.Model\bin\Debug\Microsoft.AspNet.Identity.Core
 D:\2020-2021\ASPNET\CodeShop\Shop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 D:\2020-2021\ASPNET\CodeShop\Shop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 D:\2020-2021\ASPNET\CodeShop\Shop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.Model\obj\Debug\Shop.Model.csprojAssemblyReference.cache

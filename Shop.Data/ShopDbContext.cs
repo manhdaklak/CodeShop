@@ -37,7 +37,7 @@ namespace Shop.Data
         public DbSet<ApplicationRoleGroup> ApplicationRoleGroups { set; get; }
         public DbSet<ApplicationUserGroup> ApplicationUserGroups { set; get; }
 
-
+        public DbSet<Error> Errors { set; get; }
         protected override void OnModelCreating(DbModelBuilder builder)
         {
             builder.Entity<IdentityUserRole>().HasKey(i => new { i.UserId, i.RoleId }).ToTable("ApplicationUserRoles");

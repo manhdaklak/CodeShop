@@ -35,3 +35,4 @@ D:\2020-2021\ASPNET\CodeShop\Shop.Data\bin\Debug\Microsoft.AspNet.Identity.Core.
 D:\2020-2021\ASPNET\CodeShop\Shop.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\2020-2021\ASPNET\CodeShop\Shop.Data\obj\Debug\Shop.Data.Migrations.InitDB.resources
 D:\2020-2021\ASPNET\CodeShop\Shop.Data\obj\Debug\Shop.Data.csproj.GenerateResource.cache
+D:\2020-2021\ASPNET\CodeShop\Shop.Data\obj\Debug\Shop.Data.Migrations.AddErrorTable.resources
