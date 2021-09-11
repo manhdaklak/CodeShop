@@ -155,3 +155,17 @@ D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.AspNet.Identity.Core.dll
 D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.AspNet.Identity.Core.xml
 D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Shop.Service.dll.config
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Autofac.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Autofac.Integration.Mvc.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Autofac.Integration.WebApi.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.Owin.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Owin.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Autofac.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Autofac.Integration.Mvc.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Autofac.Integration.WebApi.pdb
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Autofac.Integration.WebApi.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.Owin.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\AutoMapper.dll
+D:\2020-2021\ASPNET\CodeShop\Shop.Web\bin\AutoMapper.xml

@@ -1,16 +1,19 @@
-﻿using Shop.Model.Models;
+﻿using AutoMapper;
+using Shop.Model.Models;
 using Shop.Service;
 using Shop.Web.Instructure;
+using Shop.Web.Models;
+using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-
+using Shop.Web.Instructure.Extensions;
 namespace Shop.Web.API
 {
     [RoutePrefix("api/postcategory")]
     public class PostCategoryController : ApiControllerBase
     {
-        private IPostCategoryService _postCategoryService;
+        IPostCategoryService _postCategoryService;
 
         public PostCategoryController(IErrorService errorService, IPostCategoryService postCategoryService) :
         base(errorService)
@@ -30,15 +33,16 @@ namespace Shop.Web.API
                  else
                  {
                      var list = _postCategoryService.GetAll();
-                     _postCategoryService.Save();
 
-                     response = request.CreateResponse(HttpStatusCode.OK, list);
+                     var listViewModel = Mapper.Map<List<PostCategory>>(list);
+                     _postCategoryService.Save();
+                     response = request.CreateResponse(HttpStatusCode.OK, listViewModel);
                  }
                  return response;
              });
         }
-
-        public HttpResponseMessage Post(HttpRequestMessage request, PostCategory postCategory)
+        [Route("add")]
+        public HttpResponseMessage Post(HttpRequestMessage request, PostCategoryViewModel postCategoryView)
         {
             return createHttpResponse(request, () =>
             {
@@ -49,7 +53,10 @@ namespace Shop.Web.API
                 }
                 else
                 {
-                    var category = _postCategoryService.Add(postCategory);
+                    PostCategory newPostcategory = new PostCategory();
+                    newPostcategory.UpdatePostCategory(postCategoryView);
+
+                    var category = _postCategoryService.Add(newPostcategory);
                     _postCategoryService.Save();
 
                     response = request.CreateResponse(HttpStatusCode.OK, category);
@@ -57,8 +64,8 @@ namespace Shop.Web.API
                 return response;
             });
         }
-
-        public HttpResponseMessage Put(HttpRequestMessage request, PostCategory postCategory)
+        [Route("update")]
+        public HttpResponseMessage Put(HttpRequestMessage request, PostCategoryViewModel postCategoryView)
         {
             return createHttpResponse(request, () =>
             {
@@ -69,7 +76,10 @@ namespace Shop.Web.API
                 }
                 else
                 {
-                    _postCategoryService.Update(postCategory);
+                    var postCategoryDb = _postCategoryService.GetById(postCategoryView.ID);
+                    postCategoryDb.UpdatePostCategory(postCategoryView);
+
+                    _postCategoryService.Update(postCategoryDb);
                     _postCategoryService.Save();
 
                     response = request.CreateResponse(HttpStatusCode.OK);

@@ -3,4 +3,3 @@ D:\2020-2021\ASPNET\CodeShop\Shop.Common\bin\Debug\Shop.Common.pdb
 D:\2020-2021\ASPNET\CodeShop\Shop.Common\obj\Debug\Shop.Common.csproj.CoreCompileInputs.cache
 D:\2020-2021\ASPNET\CodeShop\Shop.Common\obj\Debug\Shop.Common.dll
 D:\2020-2021\ASPNET\CodeShop\Shop.Common\obj\Debug\Shop.Common.pdb
-D:\2020-2021\ASPNET\CodeShop\Shop.Common\obj\Debug\Shop.Common.csprojAssemblyReference.cache
