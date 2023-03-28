@@ -9,23 +9,22 @@ namespace Shop.Model.Abstract
 {
     public abstract class Auditable: IAuditable
     {
-        public DateTime? CreateDate { set; get; }
+        public DateTime? CreatedDate { set; get; }
 
         [MaxLength(256)]
-        public string CreateBy { set; get; }
+        public string CreatedBy { set; get; }
 
-        public DateTime? ModifiedDate { set; get; }
-
-        [MaxLength(256)]
-        public string ModifiedBy { set; get; }
+        public DateTime? UpdatedDate { set; get; }
 
         [MaxLength(256)]
-        public string MetaKeywords { set; get; }
+        public string UpdatedBy { set; get; }
 
         [MaxLength(256)]
-        public string MetaDescriptions { set; get; }
+        public string MetaKeyword { set; get; }
 
-        public bool? Status { set; get; }
+        [MaxLength(256)]
+        public string MetaDescription { set; get; }
 
+        public bool Status { set; get; }
     }
 }

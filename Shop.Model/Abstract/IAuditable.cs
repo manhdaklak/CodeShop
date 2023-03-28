@@ -5,22 +5,13 @@ namespace Shop.Model.Abstract
 {
     public interface IAuditable
     {
-        DateTime? CreateDate { set; get; }
+        DateTime? CreatedDate { set; get; }
+        string CreatedBy { set; get; }
+        DateTime? UpdatedDate { set; get; }
+        string UpdatedBy { set; get; }
 
-        [MaxLength(256)]
-        string CreateBy { set; get; }
-
-        DateTime? ModifiedDate { set; get; }
-        
-        [MaxLength(256)]
-        string ModifiedBy { set; get; }
-
-        [MaxLength(256)]
-        string MetaKeywords { set; get; }
-
-        [MaxLength(256)]
-        string MetaDescriptions { set; get; }
-
-        bool? Status { set; get; }
+        string MetaKeyword { set; get; }
+        string MetaDescription { set; get; }
+        bool Status { set; get; }
     }
 }

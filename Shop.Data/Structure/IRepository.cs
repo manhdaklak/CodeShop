@@ -11,14 +11,14 @@ namespace Shop.Data.Structure
     public interface IRepository <T> where T: class
     {
         // thêm mới 
-        void Add(T entity);
+         T Add(T entity);
 
         //cập nhật 
         void Update(T entity);
 
         // xóa bản ghi
-        void Delete(T entity);
-
+         T Delete(T entity);
+        T DeleteByID(int id);
         void DeleteMulti(Expression<Func<T, bool>> where);
 
         //Tìm theo id

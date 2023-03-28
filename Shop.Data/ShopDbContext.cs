@@ -1,4 +1,5 @@
-﻿using Shop.Model.Models;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using Shop.Model.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,183 +9,42 @@ using System.Threading.Tasks;
 
 namespace Shop.Data
 {
-    public class ShopDbContext: DbContext
+    public class ShopDbContext:  IdentityDbContext<ApplicationUser>
     {
         public ShopDbContext()
             : base("name=ShopDbContext")
         {
         }
+ 
+        public DbSet<Order> Orders { set; get; }
+        public DbSet<OrderDetail> OrderDetails { set; get; }
+        public DbSet<Page> Pages { set; get; }
+        public DbSet<Post> Posts { set; get; }
+        public DbSet<PostCategory> PostCategories { set; get; }
+        public DbSet<PostTag> PostTags { set; get; }
+        public DbSet<Product> Products { set; get; }
+        public DbSet<ProductCategory> ProductCategories { set; get; }
+        public DbSet<ProductTag> ProductTags { set; get; }
+        public DbSet<SupportOnline> SupportOnlines { set; get; }
+        public DbSet<SystemConfig> SystemConfigs { set; get; }
+        public DbSet<Tag> Tags { set; get; }
+        public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
+        public DbSet<ContactDetail> ContactDetails { set; get; }
+        public DbSet<Feedback> Feedbacks { set; get; }
 
-        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
-        public virtual DbSet<About> Abouts { get; set; }
-        public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<Contact> Contacts { get; set; }
-        public virtual DbSet<Content> Contents { get; set; }
-        public virtual DbSet<ContentTag> ContentTags { get; set; }
-        public virtual DbSet<Credential> Credentials { get; set; }
-        public virtual DbSet<Feedback> Feedbacks { get; set; }
-        public virtual DbSet<Order> Orders { get; set; }
-        public virtual DbSet<OrderDetail> OrderDetails { get; set; }
-        public virtual DbSet<Product> Products { get; set; }
-        public virtual DbSet<ProductCategory> ProductCategories { get; set; }
-        public virtual DbSet<Role> Roles { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-        public virtual DbSet<SystemConfig> SystemConfigs { get; set; }
-        public virtual DbSet<Tag> Tags { get; set; }
-        public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<UserGroup> UserGroups { get; set; }
+        public DbSet<ApplicationGroup> ApplicationGroups { set; get; }
+        public DbSet<ApplicationRole> ApplicationRoles { set; get; }
+        public DbSet<ApplicationRoleGroup> ApplicationRoleGroups { set; get; }
+        public DbSet<ApplicationUserGroup> ApplicationUserGroups { set; get; }
 
-        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        public DbSet<Error> Errors { set; get; }
+        protected override void OnModelCreating(DbModelBuilder builder)
         {
-            modelBuilder.Entity<About>()
-                .Property(e => e.MetaTitle)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<About>()
-                .Property(e => e.CreatedBy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<About>()
-                .Property(e => e.ModifiedBy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<About>()
-                .Property(e => e.MetaDescriptions)
-                .IsFixedLength();
-
-            modelBuilder.Entity<Category>()
-                .Property(e => e.MetaTitle)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Category>()
-                .Property(e => e.CreatedBy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Category>()
-                .Property(e => e.ModifiedBy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Category>()
-                .Property(e => e.MetaDescriptions)
-                .IsFixedLength();
-
-            modelBuilder.Entity<Content>()
-                .Property(e => e.MetaTitle)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Content>()
-                .Property(e => e.CreatedBy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Content>()
-                .Property(e => e.ModifiedBy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Content>()
-                .Property(e => e.MetaDescriptions)
-                .IsFixedLength();
-
-            modelBuilder.Entity<ContentTag>()
-                .Property(e => e.TagID)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Order>()
-                .Property(e => e.ShipMobile)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Order>()
-                .HasMany(e => e.OrderDetails)
-                .WithRequired(e => e.Order)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<OrderDetail>()
-                .Property(e => e.Price)
-                .HasPrecision(18, 0);
-
-            modelBuilder.Entity<Product>()
-                .Property(e => e.Code)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Product>()
-                .Property(e => e.MetaTitle)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Product>()
-                .Property(e => e.Price)
-                .HasPrecision(18, 0);
-
-            modelBuilder.Entity<Product>()
-                .Property(e => e.PromotionPrice)
-                .HasPrecision(18, 0);
-
-          
-
-            modelBuilder.Entity<Product>()
-                .Property(e => e.ModifiedBy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Product>()
-                .Property(e => e.MetaDescriptions)
-                .IsFixedLength();
-
-            modelBuilder.Entity<Product>()
-                .HasMany(e => e.OrderDetails)
-                .WithRequired(e => e.Product)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<ProductCategory>()
-                .Property(e => e.MetaTitle)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ProductCategory>()
-                .Property(e => e.Image)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ProductCategory>()
-                .Property(e => e.CreatedBy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ProductCategory>()
-                .Property(e => e.ModifiedBy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ProductCategory>()
-                .Property(e => e.MetaDescriptions)
-                .IsFixedLength();
-
-            modelBuilder.Entity<ProductCategory>()
-                .HasMany(e => e.Products)
-                .WithOptional(e => e.ProductCategory)
-                .HasForeignKey(e => e.CategoryID);
-
-            modelBuilder.Entity<SystemConfig>()
-                .Property(e => e.ID)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<SystemConfig>()
-                .Property(e => e.Type)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Tag>()
-                .Property(e => e.ID)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<User>()
-                .Property(e => e.UserName)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<User>()
-                .Property(e => e.Password)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<User>()
-                .Property(e => e.CreatedBy)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<User>()
-                .Property(e => e.ModifiedBy)
-                .IsUnicode(false);
+            builder.Entity<IdentityUserRole>().HasKey(i => new { i.UserId, i.RoleId }).ToTable("ApplicationUserRoles");
+            builder.Entity<IdentityUserLogin>().HasKey(i => i.UserId).ToTable("ApplicationUserLogins");
+            builder.Entity<IdentityRole>().ToTable("ApplicationRoles");
+            builder.Entity<IdentityUserClaim>().HasKey(i => i.UserId).ToTable("ApplicationUserClaims");
         }
     }
-}
+
 }
